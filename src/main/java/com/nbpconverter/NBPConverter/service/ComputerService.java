@@ -39,13 +39,15 @@ public class ComputerService {
 
 
     public void saveComputers(InvoiceDto invoiceDto) {
-        for (ComputerDto computerDto : invoiceDto.getComputerList()) {
-            Computer computer = modelMapper.map(computerDto, Computer.class);
-            computer.setAccountingDate(invoiceDto.getAccountingDate());
-            double exchangeRate = getExchangeRateFromDate(invoiceDto.getAccountingDate());
-            computer.setCostPLN(round((computerDto.getCost_USD() * exchangeRate), 2));
-            computer.setCostUSD(round(computerDto.getCost_USD(), 2));
-            computerRepository.save(computer);
+        if (invoiceDto.getComputerList() != null) {
+            for (ComputerDto computerDto : invoiceDto.getComputerList()) {
+                Computer computer = modelMapper.map(computerDto, Computer.class);
+                computer.setAccountingDate(invoiceDto.getAccountingDate());
+                double exchangeRate = getExchangeRateFromDate(invoiceDto.getAccountingDate());
+                computer.setCostPLN(round((computerDto.getCostUSD() * exchangeRate), 2));
+                computer.setCostUSD(round(computerDto.getCostUSD(), 2));
+                computerRepository.save(computer);
+            }
         }
     }
 
@@ -65,7 +67,9 @@ public class ComputerService {
     }
 
     public List<ComputerDto> getAllComputers() {
-        return computerRepository.findAll().stream().map(computer -> modelMapper.map(computer, ComputerDto.class)).toList();
+        List<Computer> computers = computerRepository.findAll();
+        List<ComputerDto> computerDtos = computers.stream().map(computer -> modelMapper.map(computer, ComputerDto.class)).toList();
+        return computerDtos;
     }
 
     public List<ComputerDto> getAllComputersSortedByName(String direction) {

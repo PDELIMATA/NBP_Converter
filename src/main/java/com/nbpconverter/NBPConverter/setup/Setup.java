@@ -12,15 +12,15 @@ public class Setup {
 
         ComputerDto first = new ComputerDto();
         first.setName("komputer 1");
-        first.setCost_USD(345);
+        first.setCostUSD(345);
 
         ComputerDto second = new ComputerDto();
         second.setName("komputer 2");
-        second.setCost_USD(543);
+        second.setCostUSD(543);
 
         ComputerDto third = new ComputerDto();
         third.setName("komputer 3");
-        third.setCost_USD(346);
+        third.setCostUSD(346);
 
         return List.of(first, second, third);
 

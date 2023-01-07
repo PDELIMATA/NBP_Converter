@@ -1,1 +1,38 @@
-<faktura><komputer><nazwa>komputer 1</nazwa><data_księgowania>2022-01-03</data_księgowania><koszt_USD>345.0</koszt_USD><koszt_PLN>1414.71</koszt_PLN></komputer><komputer><nazwa>komputer 2</nazwa><data_księgowania>2022-01-03</data_księgowania><koszt_USD>543.0</koszt_USD><koszt_PLN>2226.63</koszt_PLN></komputer><komputer><nazwa>komputer 3</nazwa><data_księgowania>2022-01-03</data_księgowania><koszt_USD>346.0</koszt_USD><koszt_PLN>1418.81</koszt_PLN></komputer><komputer><nazwa>komputer 1</nazwa><data_księgowania>2022-01-10</data_księgowania><koszt_USD>345.0</koszt_USD><koszt_PLN>1398.46</koszt_PLN></komputer><komputer><nazwa>komputer 2</nazwa><data_księgowania>2022-01-10</data_księgowania><koszt_USD>543.0</koszt_USD><koszt_PLN>2201.05</koszt_PLN></komputer><komputer><nazwa>komputer 3</nazwa><data_księgowania>2022-01-10</data_księgowania><koszt_USD>346.0</koszt_USD><koszt_PLN>1402.51</koszt_PLN></komputer></faktura>
+<faktura>
+    <komputer>
+        <nazwa>komputer 1</nazwa>
+        <data_księgowania>2022-01-03</data_księgowania>
+        <koszt_USD>345.0</koszt_USD>
+        <koszt_PLN>1414.71</koszt_PLN>
+    </komputer>
+    <komputer>
+        <nazwa>komputer 2</nazwa>
+        <data_księgowania>2022-01-03</data_księgowania>
+        <koszt_USD>543.0</koszt_USD>
+        <koszt_PLN>2226.63</koszt_PLN>
+    </komputer>
+    <komputer>
+        <nazwa>komputer 3</nazwa>
+        <data_księgowania>2022-01-03</data_księgowania>
+        <koszt_USD>346.0</koszt_USD>
+        <koszt_PLN>1418.81</koszt_PLN>
+    </komputer>
+    <komputer>
+        <nazwa>komputer 1</nazwa>
+        <data_księgowania>2022-01-10</data_księgowania>
+        <koszt_USD>345.0</koszt_USD>
+        <koszt_PLN>1398.46</koszt_PLN>
+    </komputer>
+    <komputer>
+        <nazwa>komputer 2</nazwa>
+        <data_księgowania>2022-01-10</data_księgowania>
+        <koszt_USD>543.0</koszt_USD>
+        <koszt_PLN>2201.05</koszt_PLN>
+    </komputer>
+    <komputer>
+        <nazwa>komputer 3</nazwa>
+        <data_księgowania>2022-01-10</data_księgowania>
+        <koszt_USD>346.0</koszt_USD>
+        <koszt_PLN>1402.51</koszt_PLN>
+    </komputer>
+</faktura>

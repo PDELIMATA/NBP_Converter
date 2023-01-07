@@ -24,15 +24,15 @@ class ComputerServiceTest {
 
         ComputerDto first = new ComputerDto();
         first.setName("komputer 1");
-        first.setCost_USD(345);
+        first.setCostUSD(345);
 
         ComputerDto second = new ComputerDto();
         second.setName("komputer 2");
-        second.setCost_USD(543);
+        second.setCostUSD(543);
 
         ComputerDto third = new ComputerDto();
         third.setName("komputer 3");
-        third.setCost_USD(346);
+        third.setCostUSD(346);
 
         return List.of(first, second, third);
 
@@ -78,8 +78,8 @@ class ComputerServiceTest {
 
 
         //then
-        assertThat(ComputerService.round(invoice03.getComputerList().get(0).getCost_USD() * exchnageFrom03, 2)).isEqualTo(1414.71);
-        assertThat(ComputerService.round(invoice10.getComputerList().get(0).getCost_USD() * exchangeFrom10, 2)).isEqualTo(1398.46);
+        assertThat(ComputerService.round(invoice03.getComputerList().get(0).getCostUSD() * exchnageFrom03, 2)).isEqualTo(1414.71);
+        assertThat(ComputerService.round(invoice10.getComputerList().get(0).getCostUSD() * exchangeFrom10, 2)).isEqualTo(1398.46);
 
     }
 

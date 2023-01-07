@@ -62,9 +62,9 @@
     <tbody>
     <tr th:each="computer: ${computers}">
         <td th:text="${computer.name}"></td>
-        <td th:text="${computer.accounting_date}"></td>
-        <td th:text="${computer.cost_USD}"></td>
-        <td th:text="${computer.cost_PLN}"></td>
+        <td th:text="${computer.getAccountingDate()}"></td>
+        <td th:text="${computer.getCostUSD}"></td>
+        <td th:text="${computer.getCostPLN}"></td>
     </tr>
     </tbody>
 </table>
