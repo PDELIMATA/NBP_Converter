@@ -1,7 +1,16 @@
+Przed uruchomieniem aplikacji konieczne jest utworzenie bazy danych MySQL na porcie 3306 z nazwą użytkownika "root" oraz hasłem "root".
+
+W celu uruchomienia aplikacji należy w terminalu wprowadzić:
+
+./mvnw clean install
+
+./mvnw spring-boot:run
+
+Po uruchomieniu aplikacji należy wejść w przeglądarce pod adres: "localhost:8080/".
+
 Aplikacja przelicza kwotę z USD na PLN w oparciu o API NPB na dany dzień, zapisuje do pliku XML oraz bazy danych i następnie wyświetla dane z zapisanej bazy danych w odpowiednim formacie.
 
  
-
 Opis działania:
 
 Firma kupiła 3 komputery za kwotę 1234 USD.
